@@ -13,7 +13,7 @@ import {
   TextField,
 } from "@mui/material";
 import styled from "@emotion/styled";
-import { data } from "../utils/empdata.js";
+import { data } from "../utils/data";
 import { useState } from "react";
 
 type EmployeeType = {
@@ -41,12 +41,12 @@ const Employee = () => {
     setIsModalOpen(true);
   };
   const closeEmployeeFormModal = () => {
-    setIsModalOpen(close);
+    setIsModalOpen(false);
   };
 
   const addEmployee = () => {
     const { id, name, designation } = formData;
-    setEmployeeData((prev) => [
+    setEmployeeData((prev: EmployeeType[]) => [
       ...prev,
       {
         id: id,
@@ -73,7 +73,7 @@ const Employee = () => {
   };
 
   const updateEmployee = () => {
-    setEmployeeData((prev) =>
+    setEmployeeData((prev: EmployeeType[]) =>
       prev.map((emp: EmployeeType) =>
         emp.id === formData.id ? { ...emp, ...formData } : emp
       )
@@ -195,7 +195,6 @@ const Employee = () => {
             <Box sx={{ textAlign: "right" }}>
               <Button
                 variant="text"
-                color="grey"
                 onClick={closeEmployeeFormModal}
                 sx={{ marginRight: "0.5em" }}
               >
