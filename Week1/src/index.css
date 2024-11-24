@@ -5,5 +5,13 @@
 }
 
 .title {
+  margin-block: 1rem;
+}
+
+.users {
   margin: 1rem;
+}
+
+.users>h3 {
+  margin-block: 1rem;
 }

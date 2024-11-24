@@ -1,0 +1,54 @@
+.users {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 80vh;
+}
+
+.users>h3 {
+	margin-block: 1rem;
+}
+
+.users a {
+	text-decoration: none;
+}
+
+.user-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 16px;
+	width: 30rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	text-align: center;
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.user-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.user-card img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-bottom: 16px;
+}
+
+.user-card p {
+	font-size: 14px;
+	color: #555;
+	margin: 8px 0;
+}
+
+.user-card p:first-child {
+	font-weight: bold;
+	color: #333;
+}
+
+.single-user-card {
+	margin: 5rem auto;
+}
