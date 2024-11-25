@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(247, 117, 30, 0.02);
+}
+
+.title {
+  margin-block: 1rem;
+  text-align: center;
+}
+
+/* Employee.tsx styling */
+
+.table-container {
+  min-height: 20vh;
+  margin-inline: auto;
+  margin-top: 3rem;
+}
+
+.emp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  width: 80vw;
+  margin-inline: auto;
+}
+
+.btn {
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.edit-btn {
+  margin-right: 1rem;
+  background: #1976d2;
+
+}
+
+.delete-btn {
+  background: #e11d48;
+}
+
+.add-emp-btn {
+  background: #1976d2;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: white;
+  padding: 1rem 2rem;
+  border-radius: 6px;
+}
+
+/* Employee.tsx styling end */
+
+/* TodoList.tsx styling */
+
+.single-todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.todo-title {
+  font-size: 1.25rem;
+  margin-right: 2rem;
+}
+
+/* TodoList.tsx styling end */
