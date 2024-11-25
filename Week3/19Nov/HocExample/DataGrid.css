@@ -1,0 +1,48 @@
+.data-grid {
+  margin: 20px auto;
+  max-width: 800px;
+  font-family: Arial, sans-serif;
+}
+
+.data-grid h3 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.data-grid table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.data-grid th,
+.data-grid td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-grid th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.data-grid tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-grid tr:hover {
+  background-color: #f1f1f1;
+}
+
+.data-grid .loading {
+  text-align: center;
+  font-size: 18px;
+  color: #888;
+}
+
+.data-grid .error {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
