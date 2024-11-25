@@ -1,0 +1,146 @@
+.employees {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	margin-top: -2.5rem;
+}
+
+.employees>h3 {
+	margin-block: 1rem;
+}
+
+.employees a {
+	text-decoration: none;
+}
+
+.emp-card {
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	padding: 16px;
+	width: 30rem;
+	min-height: 10rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	background-color: #fff;
+	text-align: center;
+	transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+	cursor: pointer;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.emp-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.emp-card img {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	margin-bottom: 16px;
+}
+
+.emp-card p {
+	font-size: 14px;
+	color: #555;
+	margin: 8px 0;
+}
+
+.emp-card p:first-child {
+	font-weight: bold;
+	color: #333;
+}
+
+.single-emp-card {
+	margin: 5rem auto;
+}
+
+/* AddUser.tsx */
+
+/* AddUser.css */
+.add-emp-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	background-color: #f9f9f9;
+	border-radius: 10px;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	max-width: 400px;
+	margin: 2rem auto;
+}
+
+.add-emp-container h3 {
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+	color: #333;
+}
+
+.add-emp-container form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.add-emp-container input {
+	padding: 0.8rem;
+	margin-bottom: 1rem;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	font-size: 1rem;
+}
+
+.add-emp-container input:focus {
+	outline: none;
+	border-color: #007bff;
+	box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.add-emp-container button {
+	padding: 0.8rem;
+	background-color: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.add-emp-container button:hover {
+	background-color: #0056b3;
+}
+
+.add-emp-container button:disabled {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+
+/* AddUser.tsx end*/
+
+.btn {
+	color: white;
+	padding: 0.4rem 1rem;
+	border-radius: 8px;
+	border: none;
+	cursor: pointer;
+}
+
+.btn:hover {
+	box-shadow: rgba(0, 0, 0, 0.3) 0px 3px 8px;
+}
+
+.edit-btn {
+	margin-right: 1rem;
+	background: #1976d2;
+
+}
+
+.delete-btn {
+	background: #e11d48;
+}
